@@ -1,0 +1,198 @@
+﻿<!-- HTMl sayfaları içerisinde <!-- -- > kod blokları içerisinde yorum yazabilirsiniz  -->
+<!--
+
+    HTML(Hyper Text Markup Language) metinin kısaltılmasıdır . Türkçe anlamı Hiper Metin İşaret Dili 'dir).
+    HTML  çeşitli anlamlara gelen kodlamalar ve metinlerden oluşur.
+    Bu kodlar ancak bir Web Browser tarafından anlamlı hale getirilip kullanıcı tarafından görüntülenir.
+    Bu programlama dili ile yazılmış dosyaların uzantıları .html ve .htm olarak belirtilir.
+
+    HTML kodları < ile başalyıp > işareti ile biten anahtarlardan oluşmaktadır
+    Oluşturulan HTML taglarını kapatmak için </ ile başlayıp > ile sonlandırmanız gerekmektedir
+
+    Örnek : <html> </html>
+
+    Hazırlanan tüm HTML sayfaları bu şekilde hazırlanmış olan kodlardan ve aralarında geçen metinlerden oluşmaktadır. Bir HTML tag'ı içerisinde özellikler belirtecek ise kapatma işleminden önce özellik="deger" şeklinde tanımlama yapılmaktadır
+
+    Örnek  : <body bgcolor="red"> </body>
+
+    HTML taglarında büyük küçük harf zorunluluğu bulunmamaktadır
+    Tag tanımlamalarında <BODY> </BODY> ile <body> </body> arasında hiçbir fark yoktur.Her iki komutu da algılar ve işleme alır
+
+    Buna karşılık internet ortamında belirlenen Standart Kod Yazım Kuralu olan W3C standartları gereği küçük harfler ile yazılması daha yararlıdır
+
+
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<!-- Bir HTML sayfasının başladığını belirtir-->
+<head>
+    <!-- HTML sayfaları içerisinde tanımlanan meta tag'lar , script dosyaları , css dosyaları vs.. gibi dökümanların belirtildiği alandır .Bu alan kullanıcı tarafından görüntülenmez.-->
+    <meta charset="utf-8" /><!-- Sayfa içerisinde kullanılacak olan dilin karakter kodunu belirttiğimiz alandır.Bu alan içerisinde tanımlanabilecek oan charset listesine internet üzerinden ulaşabilirsiniz -->
+    <title>HTML ASP.NET Uygulama 1</title><!-- Sayfanın Başlığını tanımlamak için kullanılır-->
+</head>
+<body bgcolor="Gray ">
+    <!-- HTMl sayfalarında bu alan içerisinde yazılan metinler ve tag'lar kullanıcı tarafından görüntülenir -->
+    HTML derslerine hoşgeldiniz
+
+    <!-- ÇİZGİ -->
+    <!--
+     Sayfa içerisinde  yatak çizgi çekmek için kullanızlır
+     HR(Horizontal Rule) etiketinin diğer tag'lar gibi başlama ve bitirme komutu bulunmamaktadır.İçerisine herhangi bir metin veya tag yazılmayacağından dolayı başladığı gibi biter.<hr />
+
+        Bu tag'in içerisinde 3 farklı parametre bulunmaktadır
+        Size: Çizginin kalınlığını belirtir
+        Width : Çizginin genişliğini belirtir
+        Align: Çizginin konumunu belirtir.(left , right ,center).Default olarak center konumunu alır
+
+        Genel NOt:HTMl tagları içerisinde belirtilen width property lerinin içerisinde aldığı değer default olarak pixel(px) cinsindedir.Uzunluk birimi olarak farklı birimlerde kullanılabilir.
+        BUnlardan bazıalrı px , % , pt , rem ...
+    -->
+    <hr size="10" width="200" align="left" />
+    <hr />
+
+    <!--
+
+        BAŞLIK
+
+    Html etiketleri arasında  (Headings) etiketi en önemli etiketlerden bir tanesidir.
+    Başlık etiketi <h1> ile <h6> arasında büyükten küçüğe doğru kullanılmaktadır.
+    En büyük başlık <h1> en küçük başlık <h6> dır.
+    Başlık etiketleri kullandıktan sonra  otomatik olarak alt satıra geçme işlemini sağlar
+
+    -->
+    <h1>Başlık 1</h1>
+    <h2>Başlık 2</h2>
+    <h3>Başlık 3</h3>
+    <h4>Başlık 4</h4>
+    <h5>Başlık 5</h5>
+    <h6>Başlık 6</h6>
+
+    <hr />
+
+    <!--
+        Paragraf
+
+        HTML  etiketleri arasında paragraf<p> etiketi en önemli etiketlerden biridir
+        Paragraf etiketleri HTML web sitelerinde kullandığımız içerikleri paragrafa çevirmek için kullanılır
+
+        Paragraf etiketi <p> ......... </p> şeklinde kullanılınır
+
+        Paragraf etiketi kullanıldıktan sonra HTML otomatik olarak bir alt satıra geçme işlemini sağlar
+    -->
+    <p>Paragraf etiketi kullanım örneği</p>
+    <p>Her p etiketinden sonra otomatik olarak bir alt satıra geçme işlemini sağlar</p>
+
+    <p>
+        Paragraf etiketlerinde
+
+        boşluk bıraksanız bile
+
+        HTML dili boşlukları ve alt satıra geçme işlemini
+
+        yok sayarak ekrana düz bir metin halinde
+        göstermektedir
+    </p>
+
+    <!--
+        Alt Satıra Geçme
+
+        HTML dilinde alt satıra geçme işlemi<br/> tag'i ile yapılır
+
+    -->
+    Düz metinler
+
+    içerisinde yazılan
+
+    yazıları <br />bazı durumlarda<br />alt satıra geçerek görüntüleyebilirsiniz
+
+    <!-- BİÇİMLENDİRME-->
+    <!--
+        HTML sayfaları içerisinde düzenleme yani biçimlendirme kullanılarak metinler üzerinde biçimlendirme işlemleri yapılmaktadır.HTML sayfasındaki metinlerin renk , boyut, kalınlık , eğiklik vs ... gibi değişiklikler HTML metin düzenleme etiketleri ile yapılmaktadır
+
+        HTML dilinde en çok kullanılan etiketler:
+        - <b>       =>(Bold) kalın yazı
+        - <strong>  =>Önemli yazı
+        - <u>       =>(Underline) Altı Çizgili Yazı
+        - <ins>     =>Altı Çizgili pasif yazı
+        - <i>       =>(Italic) Eğik yazı
+        - <em>      =>Vurgulu yazı
+        - <font>    =>Yazı tipi , boyutu ,renk belirlemek için kullanılır
+        - <mark>    =>İşaretlenmiş yazı
+        - <big>     =>Büyük Yazı
+        - <small>   =>Küçük yazı
+
+        Genel Not : HTML etiketlerini iç içe sınırsız bir şekilde , tag açma ve kapama kurallarına bağlı kalarak istediğiniz kadar kullanabilirsiniz
+    -->
+    <!--
+        Font Etiketi
+
+        Font etiketi ile yazılan metinler içerisinde renk , boyut , yazı tipi gibi özellikler tanımlanabilir
+        Font etiketinin 3 parametresi bulunmaktadır
+
+        -Size : Yazının boyutunu belirtir . 1 ile 7 arasında değer alır
+        -Color : Yazını rengini belirtir .Yazı rengini iki farklı yöntemle tanımlayabiliriz.Yazının rengini ingilizce ismi ile veya RGB renk kodu tanımlaması yaparak belirleyebiliriz.RGB renk kodu tanımlaması #000000 ile #ffffff arasındaki kodlar ile tanımlanabilir
+        -Face :Yazı tipini belirtir.Default olarak işletim sisteminde kullanılan yazı tipini alır.Font tanımlaması yaparken işletim sisteminde yüklü olan fontlardan birinin belirlenmesi gerekmektedir.Aksi takdirde font görüntülenmesi doğru bir şekilde yapılamaz
+    -->
+    <p>
+        <b>Kalın Yazı</b><br />
+        <strong>Önemli Yazı</strong><br />
+        <u>Altı Çİzili Yazı</u> <br />
+        <i>Eğik Yazı</i><br />
+        <em>Vurgulanan Yazı</em>
+
+        <hr />
+
+        <font size="5"> Font yazı örneği 1</font><br />
+        <font color="blue">Font Yazı Örneği 2</font><br />
+        <font face="Tahoma">Font Yazı Örneği 3</font><br />
+
+        <hr />
+
+        <mark>İşaretlenmiş Yazı</mark><br />
+        <s>Üstü Çizili Yazı</s><br />
+        <big>Büyük Yazı</big><br />
+        <small>Küçük Yazı</small>
+
+    </p>
+
+    <!-- Resim -->
+    <!--
+        HTML içerisinde web sitelerinin görsellğini artırmak veya bir konuyu detaylandırmak için resim eklemek isteyebiliriz
+        Resim eklemek için <img/> etiketini kullanırız
+
+        Resim etiketinin parametreleri:
+        - src:Resmin kaynağını belirtir
+        - alt: Resim herhangi bir sebepten dolayı görüntülenemediğinde gösterilecek olan metin bilgisi girilir
+        - title : resimi isimlendirmek için kullanılır
+        - Width : Resimin genişliğini belirtmek için kullanılır
+        - Height : Resimin yüksekliğini belirlemek için kullanılır
+        - Border : Resmin çerçeve kalınlığını belirlemek için kullanılır.Tanımlanmadığı takdirde default olarak 0(sıfır) değerini alır
+        - Align : Resmin konumunu belirlemek için kullanılır (left , right , center)(Center konumu HTML5 dili tarafından desteklenmediği için çalışmamaktadır)
+    -->
+    <p>
+        <hr />
+
+        <div  align="center"> 
+            <img src="imege/SpongeBob.jpg" width="300" alt="SpongeBob" title="SpongeBob Resmi" border="5"  />
+        </div> 
+        
+    </p>
+
+
+
+    <hr />
+    <p>
+        Lorem Ipsum , <b>dizgi ve <i>baskı endtüsrisinde kullanılan</i> mıgır metinlerdir.</b>Lorem Ipsum , adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir  yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır.<font color="red"><b><i><u>Beşyüz yıl boyunca varlığını sürdürmekle kalmamış</u></i></b></font>, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır.1960'larda Lorem Ipsum pasajları da  içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+    </p>
+
+
+
+
+
+</body>
+</html>
